@@ -10,7 +10,7 @@ defmodule MsrtaGen.Repo.Migrations.CreateRun do
       add :regions,           {:array, :string}
       add :tests_of_strength, {:array, :string}
       add :blessings,         :string
-      add :bloody_moon,       :boolean
+      add :other_opts,        {:array, :string}
 
       timestamps()
     end

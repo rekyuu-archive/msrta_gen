@@ -12,8 +12,6 @@ defmodule MsrtaGen.RunController do
         IO.inspect changeset
         redirect conn, to: "/"
     end
-
-    # redirect conn, to: "/run/#{run_params["seed"]}"
   end
 
   def show(conn, %{"id" => id}) do
