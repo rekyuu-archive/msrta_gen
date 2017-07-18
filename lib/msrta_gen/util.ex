@@ -17,7 +17,7 @@ defmodule MsrtaGen.Util do
   def gen_pool(params) do
     # Adds Divine Beasts (x4 chance of pulling)
     beasts = case params.beasts do
-      nil -> pool
+      nil -> []
       beasts ->
         for beast <- beasts do
           case beast do
