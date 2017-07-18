@@ -1,56 +1,60 @@
 <form action="/run" method="post">
   <input id="csrf" type="hidden" name="_csrf_token" value="<%= get_csrf_token() %>">
 
-  <button>Generate Run</button>
+  <button id="generate" type="submit">Generate Run</button>
 
   <h2>Run Options</h2>
 
   <fieldset>
     <legend>Seed</legend>
     <input type="text" name="seed" value="<%= @seed %>" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="16"/>
+    <p style="margin-bottom: 0">Maximum of 16 characters, numbers only. Can not be blank.</p>
   </fieldset>
 
   <fieldset>
     <legend>Quest Mode</legend>
 
     <div>
-      <input type="radio" name="quest_mode" value="true" checked>
-      <label>Show goals one at a time after completion</label>
+      <input id="quest_true" type="radio" name="quest_mode" value="true" checked>
+      <label for="quest_true">Show goals one at a time after completion</label>
     </div>
 
     <div>
-      <input type="radio" name="quest_mode" value="false">
-      <label>Show all goals at once</label>
+      <input id="quest_false" type="radio" name="quest_mode" value="false">
+      <label for="quest_false">Show all goals at once</label>
     </div>
   </fieldset>
 
   <fieldset>
     <legend>Shuffle Great Plateau Shrines</legend>
-    <input type="radio" name="plat_shuffle" value="true" checked> Yes
-    <input type="radio" name="plat_shuffle" value="false"> No
+    <input id="shuffle_true" type="radio" name="plat_shuffle" value="true" checked>
+    <label for="shuffle_true">Yes</label>
+
+    <input id="shuffle_false" type="radio" name="plat_shuffle" value="false">
+    <label for="shuffle_false">No</label>
   </fieldset>
 
   <fieldset>
     <legend>Divine Beasts</legend>
 
     <div>
-      <input type="checkbox" name="beasts[]" value="medoh" checked>
-      <label>Vah Medoh</label>
+      <input id="medoh" type="checkbox" name="beasts[]" value="medoh" checked>
+      <label for="medoh">Vah Medoh</label>
     </div>
 
     <div>
-      <input type="checkbox" name="beasts[]" value="naboris" checked>
-      <label>Vah Naboris</label>
+      <input id="naboris" type="checkbox" name="beasts[]" value="naboris" checked>
+      <label for="naboris">Vah Naboris</label>
     </div>
 
     <div>
-      <input type="checkbox" name="beasts[]" value="rudania" checked>
-      <label>Vah Rudania</label>
+      <input id="rudania" type="checkbox" name="beasts[]" value="rudania" checked>
+      <label for="rudania">Vah Rudania</label>
     </div>
 
     <div>
-      <input type="checkbox" name="beasts[]" value="ruta" checked>
-      <label>Vah Ruta</label>
+      <input id="ruta" type="checkbox" name="beasts[]" value="ruta" checked>
+      <label for="ruta">Vah Ruta</label>
     </div>
   </fieldset>
 
@@ -58,112 +62,115 @@
     <legend>Regions</legend>
 
     <div>
-      <input type="checkbox" name="regions[]" value="akkala" checked>
-      <label>Akkala</label>
+      <input id="akkala" type="checkbox" name="regions[]" value="akkala" checked>
+      <label for="akkala">Akkala</label>
     </div>
 
     <div>
-      <input type="checkbox" name="regions[]" value="central" checked>
-      <label>Central Hyrule</label>
+      <input id="central" type="checkbox" name="regions[]" value="central" checked>
+      <label for="central">Central Hyrule</label>
     </div>
 
     <div>
-      <input type="checkbox" name="regions[]" value="dueling_peaks" checked>
-      <label>Dueling Peaks</label>
+      <input id="dueling_peaks" type="checkbox" name="regions[]" value="dueling_peaks" checked>
+      <label for="dueling_peaks">Dueling Peaks</label>
     </div>
 
     <div>
-      <input type="checkbox" name="regions[]" value="eldin" checked>
-      <label>Eldin</label>
+      <input id="eldin" type="checkbox" name="regions[]" value="eldin" checked>
+      <label for="eldin">Eldin</label>
     </div>
 
     <div>
-      <input type="checkbox" name="regions[]" value="faron" checked>
-      <label>Faron</label>
+      <input id="faron" type="checkbox" name="regions[]" value="faron" checked>
+      <label for="faron">Faron</label>
     </div>
 
     <div>
-      <input type="checkbox" name="regions[]" value="gerudo" checked>
-      <label>Gerudo</label>
+      <input id="gerudo" type="checkbox" name="regions[]" value="gerudo" checked>
+      <label for="gerudo">Gerudo</label>
     </div>
 
     <div>
-      <input type="checkbox" name="regions[]" value="hateno" checked>
-      <label>Hateno</label>
+      <input id="hateno" type="checkbox" name="regions[]" value="hateno" checked>
+      <label for="hateno">Hateno</label>
     </div>
 
     <div>
-      <input type="checkbox" name="regions[]" value="hebra" checked>
-      <label>Hebra</label>
+      <input id="hebra" type="checkbox" name="regions[]" value="hebra" checked>
+      <label for="hebra">Hebra</label>
     </div>
 
     <div>
-      <input type="checkbox" name="regions[]" value="lake" checked>
-      <label>Lake</label>
+      <input id="lake" type="checkbox" name="regions[]" value="lake" checked>
+      <label for="lake">Lake</label>
     </div>
 
     <div>
-      <input type="checkbox" name="regions[]" value="lanayru" checked>
-      <label>Lanayru</label>
+      <input id="lanayru" type="checkbox" name="regions[]" value="lanayru" checked>
+      <label for="lanayru">Lanayru</label>
     </div>
 
     <div>
-      <input type="checkbox" name="regions[]" value="ridgeland" checked>
-      <label>Ridgeland</label>
+      <input id="ridgeland" type="checkbox" name="regions[]" value="ridgeland" checked>
+      <label for="ridgeland">Ridgeland</label>
     </div>
 
     <div>
-      <input type="checkbox" name="regions[]" value="tabantha" checked>
-      <label>Tabantha</label>
+      <input id="tabantha" type="checkbox" name="regions[]" value="tabantha" checked>
+      <label for="tabantha">Tabantha</label>
     </div>
 
     <div>
-      <input type="checkbox" name="regions[]" value="wasteland" checked>
-      <label>Wasteland</label>
+      <input id="wasteland" type="checkbox" name="regions[]" value="wasteland" checked>
+      <label for="wasteland">Wasteland</label>
     </div>
 
     <div>
-      <input type="checkbox" name="regions[]" value="woodland" checked>
-      <label>Woodland</label>
+      <input id="woodland" type="checkbox" name="regions[]" value="woodland" checked>
+      <label for="woodland">Woodland</label>
     </div>
   </fieldset>
 
   <fieldset>
     <legend>Tests of Strength</legend>
 
-    <input type="checkbox" name="tests_of_strength[]" value="minor" checked>
-    <label>Minor</label>
+    <input id="minor" type="checkbox" name="tests_of_strength[]" value="minor" checked>
+    <label for="minor">Minor</label>
 
-    <input type="checkbox" name="tests_of_strength[]" value="modest" checked>
-    <label>Modest</label>
+    <input id="modest" type="checkbox" name="tests_of_strength[]" value="modest" checked>
+    <label for="modest">Modest</label>
 
-    <input type="checkbox" name="tests_of_strength[]" value="major" checked>
-    <label>Major</label>
+    <input id="major" type="checkbox" name="tests_of_strength[]" value="major" checked>
+    <label for="major">Major</label>
   </fieldset>
 
   <fieldset>
     <legend>Blessing Shrines</legend>
 
     <div>
-      <input type="radio" name="blessings" value="forced" checked>
-      <label>Forced Shrine Quests Only</label>
+      <input id="blessings_forced" type="radio" name="blessings" value="quests" checked>
+      <label for="blessings_forced">Forced Shrine Quests Only</label>
     </div>
 
     <div>
-      <input type="radio" name="blessings" value="true">
-      <label>All Blessing Shrines</label>
+      <input id="blessings_all" type="radio" name="blessings" value="all">
+      <label for="blessings_all">All Blessing Shrines</label>
     </div>
 
     <div>
-      <input type="radio" name="blessings" value="false">
-      <label>No Blessing Shrines</label>
+      <input id="blessings_none" type="radio" name="blessings" value="none">
+      <label for="blessings_none">No Blessing Shrines</label>
     </div>
   </fieldset>
 
   <fieldset>
     <legend>Include Mijah Rokee (Under a Red Moon)</legend>
 
-    <input type="radio" name="bloody_moon" value="true"> Yes
-    <input type="radio" name="bloody_moon" value="false" checked> No
+    <input id="bloody_moon_yes" type="radio" name="bloody_moon" value="true">
+    <label for="bloody_moon_yes">Yes</label>
+
+    <input id="bloody_moon_no" type="radio" name="bloody_moon" value="false" checked>
+    <label for="bloody_moon_no">No</label>
   </fieldset>
 </form>

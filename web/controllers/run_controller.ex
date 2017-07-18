@@ -1,31 +1,23 @@
 defmodule MsrtaGen.RunController do
+  alias MsrtaGen.Run
   use MsrtaGen.Web, :controller
 
-  def index(conn, _params) do
-    render conn, "index.html"
-  end
+  def create(conn, run_params) do
+    changeset = Run.changeset(%Run{}, run_params)
 
-  def new(conn, _params) do
-    render conn, "index.html"
-  end
+    case Repo.insert(changeset) do
+      {:ok, run} ->
+        redirect conn, to: "/run/#{run.id}"
+      {:error, changeset} ->
+        IO.inspect changeset
+        redirect conn, to: "/"
+    end
 
-  def create(conn, _params) do
-    render conn, "index.html"
+    # redirect conn, to: "/run/#{run_params["seed"]}"
   end
 
   def show(conn, %{"id" => id}) do
-    render conn, "index.html", id: id
-  end
-
-  def edit(conn, %{"id" => id}) do
-    render conn, "index.html", id: id
-  end
-
-  def update(conn, %{"id" => id}) do
-    render conn, "index.html", id: id
-  end
-
-  def delete(conn, %{"id" => id}) do
-    render conn, "index.html", id: id
+    run = Repo.get!(Run, id)
+    render conn, "show.html", run: run
   end
 end

@@ -13,7 +13,7 @@
 
   <body>
     <div id="main" class="ui container">
-      <h1 class="ui dividing header">Master Sword RTA Run Generator</h1>
+      <h1><a href="/">Master Sword RTA Run Generator</a></h1>
 
       <%= render @view_module, @view_template, assigns %>
 
