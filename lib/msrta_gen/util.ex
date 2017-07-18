@@ -43,7 +43,7 @@ defmodule MsrtaGen.Util do
 
     # Clears shrines that are not selected
     shrines = for opt <- opts do
-      unless Enum.member?(params.optional_opts, opt) do
+      unless Enum.member?(params.other_opts, opt) do
         shrines = if opt == "camera" do
           # Stolen Heirloom
           index = Enum.find_index(shrines, fn(s) -> s.id == 17 end)
@@ -164,6 +164,8 @@ defmodule MsrtaGen.Util do
       true -> gen_plateau(params.seed)
       false -> nil
     end
+
+    IO.inspect plateau
 
     shrine_pool = gen_pool(params)
 
