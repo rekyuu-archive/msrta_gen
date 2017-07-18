@@ -61,7 +61,7 @@
   <fieldset>
     <legend>Regions</legend>
 
-    <p>If a unchecked region includes a Divine Beast that is checked above, the Divine Beast will be removed from the pool.</p>
+    <p style="margin-top: 0">If a unchecked region includes a Divine Beast that is checked above, the Divine Beast will be removed from the pool.</p>
 
     <div>
       <input id="akkala" type="checkbox" name="regions[]" value="akkala" checked>
@@ -170,8 +170,8 @@
     <legend>Include Specific Shrines</legend>
 
     <div>
-      <input id="bloody_moon" type="checkbox" name="other_opts[]" value="bloody_moon">
-      <label for="bloody_moon">Mijah Rokee (Under a Red Moon)</label>
+      <input id="camera" type="checkbox" name="other_opts[]" value="camera">
+      <label for="camera">Camera-required Shrine Quests</label>
     </div>
 
     <div>
@@ -185,13 +185,28 @@
     </div>
 
     <div>
+      <input id="twin_memories" type="checkbox" name="other_opts[]" value="twin_memories" checked>
+      <label for="twin_memories">Twin Memories Shrines</label>
+    </div>
+
+    <div>
+      <input id="shrouded" type="checkbox" name="other_opts[]" value="shrouded">
+      <label for="shrouded">Ketoh Wawai (Shrouded Shrine)</label>
+    </div>
+
+    <div>
       <input id="eventide" type="checkbox" name="other_opts[]" value="eventide" checked>
       <label for="eventide">Korgu Chideh (Stranded on Eventide)</label>
     </div>
 
     <div>
-      <input id="twin_memories" type="checkbox" name="other_opts[]" value="twin_memories" checked>
-      <label for="twin_memories">Twin Memories Shrines</label>
+      <input id="thunder" type="checkbox" name="other_opts[]" value="thunder" checked>
+      <label for="thunder">Toh Yahsa (Trial of Thunder)</label>
+    </div>
+
+    <div>
+      <input id="bloody_moon" type="checkbox" name="other_opts[]" value="bloody_moon">
+      <label for="bloody_moon">Mijah Rokee (Under a Red Moon)</label>
     </div>
   </fieldset>
 </form>
