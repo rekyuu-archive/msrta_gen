@@ -10,7 +10,7 @@ defmodule MsrtaGen.Util do
   end
 
   def gen_plateau(seed) do
-    :rand.seed(:exs1024, {seed, 0, 0})
+    :rand.seed(:exs1024, {String.to_integer(seed), 0, 0})
     Definitions.plateau |> Enum.shuffle
   end
 
