@@ -170,22 +170,22 @@
     <legend>Include Specific Shrines</legend>
 
     <div>
-      <input id="bloody_moon" type="checkbox" name="other[]" value="bloody_moon">
+      <input id="bloody_moon" type="checkbox" name="other_opts[]" value="bloody_moon">
       <label for="bloody_moon">Mijah Rokee (Under a Red Moon)</label>
     </div>
 
     <div>
-      <input id="labyrinths" type="checkbox" name="other[]" value="labyrinths" checked>
+      <input id="labyrinths" type="checkbox" name="other_opts[]" value="labyrinths" checked>
       <label for="labyrinths">Labyrinth Shrines</label>
     </div>
 
     <div>
-      <input id="springs" type="checkbox" name="other[]" value="springs" checked>
+      <input id="springs" type="checkbox" name="other_opts[]" value="springs" checked>
       <label for="springs">Spring Shrines</label>
     </div>
 
     <div>
-      <input id="eventide" type="checkbox" name="other[]" value="eventide" checked>
+      <input id="eventide" type="checkbox" name="other_opts[]" value="eventide" checked>
       <label for="eventide">Korgu Chideh (Stranded on Eventide)</label>
     </div>
 
