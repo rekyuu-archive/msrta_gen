@@ -12,6 +12,15 @@
   </head>
 
   <body>
-     <%= render @view_module, @view_template, assigns %>
+    <div id="main" class="ui container">
+      <h1 class="ui dividing header">Master Sword RTA Run Generator</h1>
+
+      <%= render @view_module, @view_template, assigns %>
+
+      <footer>Created by <a href="https://rekyuu.co">rekyuu</a></footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
   </body>
 </html>

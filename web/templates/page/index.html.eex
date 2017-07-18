@@ -1,1 +1,169 @@
-<h1>KonCha</h1>
+<form action="/run" method="post">
+  <input id="csrf" type="hidden" name="_csrf_token" value="<%= get_csrf_token() %>">
+
+  <button>Generate Run</button>
+
+  <h2>Run Options</h2>
+
+  <fieldset>
+    <legend>Seed</legend>
+    <input type="text" name="seed" value="<%= @seed %>" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="16"/>
+  </fieldset>
+
+  <fieldset>
+    <legend>Quest Mode</legend>
+
+    <div>
+      <input type="radio" name="quest_mode" value="true" checked>
+      <label>Show goals one at a time after completion</label>
+    </div>
+
+    <div>
+      <input type="radio" name="quest_mode" value="false">
+      <label>Show all goals at once</label>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Shuffle Great Plateau Shrines</legend>
+    <input type="radio" name="plat_shuffle" value="true" checked> Yes
+    <input type="radio" name="plat_shuffle" value="false"> No
+  </fieldset>
+
+  <fieldset>
+    <legend>Divine Beasts</legend>
+
+    <div>
+      <input type="checkbox" name="beasts[]" value="medoh" checked>
+      <label>Vah Medoh</label>
+    </div>
+
+    <div>
+      <input type="checkbox" name="beasts[]" value="naboris" checked>
+      <label>Vah Naboris</label>
+    </div>
+
+    <div>
+      <input type="checkbox" name="beasts[]" value="rudania" checked>
+      <label>Vah Rudania</label>
+    </div>
+
+    <div>
+      <input type="checkbox" name="beasts[]" value="ruta" checked>
+      <label>Vah Ruta</label>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Regions</legend>
+
+    <div>
+      <input type="checkbox" name="regions[]" value="akkala" checked>
+      <label>Akkala</label>
+    </div>
+
+    <div>
+      <input type="checkbox" name="regions[]" value="central" checked>
+      <label>Central Hyrule</label>
+    </div>
+
+    <div>
+      <input type="checkbox" name="regions[]" value="dueling_peaks" checked>
+      <label>Dueling Peaks</label>
+    </div>
+
+    <div>
+      <input type="checkbox" name="regions[]" value="eldin" checked>
+      <label>Eldin</label>
+    </div>
+
+    <div>
+      <input type="checkbox" name="regions[]" value="faron" checked>
+      <label>Faron</label>
+    </div>
+
+    <div>
+      <input type="checkbox" name="regions[]" value="gerudo" checked>
+      <label>Gerudo</label>
+    </div>
+
+    <div>
+      <input type="checkbox" name="regions[]" value="hateno" checked>
+      <label>Hateno</label>
+    </div>
+
+    <div>
+      <input type="checkbox" name="regions[]" value="hebra" checked>
+      <label>Hebra</label>
+    </div>
+
+    <div>
+      <input type="checkbox" name="regions[]" value="lake" checked>
+      <label>Lake</label>
+    </div>
+
+    <div>
+      <input type="checkbox" name="regions[]" value="lanayru" checked>
+      <label>Lanayru</label>
+    </div>
+
+    <div>
+      <input type="checkbox" name="regions[]" value="ridgeland" checked>
+      <label>Ridgeland</label>
+    </div>
+
+    <div>
+      <input type="checkbox" name="regions[]" value="tabantha" checked>
+      <label>Tabantha</label>
+    </div>
+
+    <div>
+      <input type="checkbox" name="regions[]" value="wasteland" checked>
+      <label>Wasteland</label>
+    </div>
+
+    <div>
+      <input type="checkbox" name="regions[]" value="woodland" checked>
+      <label>Woodland</label>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Tests of Strength</legend>
+
+    <input type="checkbox" name="tests_of_strength[]" value="minor" checked>
+    <label>Minor</label>
+
+    <input type="checkbox" name="tests_of_strength[]" value="modest" checked>
+    <label>Modest</label>
+
+    <input type="checkbox" name="tests_of_strength[]" value="major" checked>
+    <label>Major</label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Blessing Shrines</legend>
+
+    <div>
+      <input type="radio" name="blessings" value="forced" checked>
+      <label>Forced Shrine Quests Only</label>
+    </div>
+
+    <div>
+      <input type="radio" name="blessings" value="true">
+      <label>All Blessing Shrines</label>
+    </div>
+
+    <div>
+      <input type="radio" name="blessings" value="false">
+      <label>No Blessing Shrines</label>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Include Mijah Rokee (Under a Red Moon)</legend>
+
+    <input type="radio" name="bloody_moon" value="true"> Yes
+    <input type="radio" name="bloody_moon" value="false" checked> No
+  </fieldset>
+</form>

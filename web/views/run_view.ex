@@ -1,3 +1,3 @@
-defmodule MsrtaGen.PageView do
+defmodule MsrtaGen.RunView do
   use MsrtaGen.Web, :view
 end
