@@ -190,7 +190,7 @@
     </div>
 
     <div>
-      <input id="shrouded" type="checkbox" name="other_opts[]" value="shrouded">
+      <input id="shrouded" type="checkbox" name="other_opts[]" value="shrouded" checked>
       <label for="shrouded">Ketoh Wawai (Shrouded Shrine)</label>
     </div>
 
