@@ -1,4 +1,4 @@
-defmodule Msrta.Definitions do
+defmodule MsrtaGen.Definitions do
   def plateau do
     [
       %{
