@@ -157,7 +157,8 @@ defmodule MsrtaGen.Util do
 
   def gen_run(params) do
     total_orbs = 36
-    :rand.seed(:exs1024, {params.seed, 0, 0})
+    params = for {k, v} <- params, into: %{}, do: {String.to_atom(k), v}
+    :rand.seed(:exs1024, {String.to_integer(params.seed), 0, 0})
 
     plateau = case params.plat_shuffle do
       true -> gen_plateau(params.seed)

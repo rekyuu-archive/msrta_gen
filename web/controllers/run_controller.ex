@@ -1,5 +1,6 @@
 defmodule MsrtaGen.RunController do
   alias MsrtaGen.Run
+  alias MsrtaGen.Util
   use MsrtaGen.Web, :controller
 
   def create(conn, run_params) do
