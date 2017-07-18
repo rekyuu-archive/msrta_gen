@@ -46,83 +46,83 @@ defmodule MsrtaGen.Util do
       unless Enum.member?(params.optional_opts, opt) do
         shrines = if opt == "camera" do
           # Stolen Heirloom
-          index = Enum.find_index(shrines, fn(s) -> s.id = 17 end)
+          index = Enum.find_index(shrines, fn(s) -> s.id == 17 end)
           shrines = List.delete_at(shrines, index)
 
           # Fragmented Monument
-          index = Enum.find_index(shrines, fn(s) -> s.id = 39 end)
+          index = Enum.find_index(shrines, fn(s) -> s.id == 39 end)
           shrines = List.delete_at(shrines, index)
 
           # Guardian Slideshow
-          index = Enum.find_index(shrines, fn(s) -> s.id = 70 end)
+          index = Enum.find_index(shrines, fn(s) -> s.id == 70 end)
           List.delete_at(shrines, index)
         end
 
         shrines = if opt == "labyrinths" do
           # Akkala Labyrinth
-          index = Enum.find_index(shrines, fn(s) -> s.id = 5 end)
+          index = Enum.find_index(shrines, fn(s) -> s.id == 5 end)
           shrines = List.delete_at(shrines, index)
 
           # Hebra Labyrinth
-          index = Enum.find_index(shrines, fn(s) -> s.id = 63 end)
+          index = Enum.find_index(shrines, fn(s) -> s.id == 63 end)
           shrines = List.delete_at(shrines, index)
 
           # Wasteland Labyrinth
-          index = Enum.find_index(shrines, fn(s) -> s.id = 97 end)
+          index = Enum.find_index(shrines, fn(s) -> s.id == 97 end)
           List.delete_at(shrines, index)
         end
 
         shrines = if opt == "springs" do
           # Spring of Power
-          index = Enum.find_index(shrines, fn(s) -> s.id = 0 end)
+          index = Enum.find_index(shrines, fn(s) -> s.id == 0 end)
           shrines = List.delete_at(shrines, index)
 
           # Spring of Wisdon
-          index = Enum.find_index(shrines, fn(s) -> s.id = 51 end)
+          index = Enum.find_index(shrines, fn(s) -> s.id == 51 end)
           shrines = List.delete_at(shrines, index)
 
           # Spring of Courage
-          index = Enum.find_index(shrines, fn(s) -> s.id = 73 end)
+          index = Enum.find_index(shrines, fn(s) -> s.id == 73 end)
           List.delete_at(shrines, index)
         end
 
         shrines = if opt == "twin_memories" do
           # Shee Vaneer
-          index = Enum.find_index(shrines, fn(s) -> s.id = 23 end)
+          index = Enum.find_index(shrines, fn(s) -> s.id == 23 end)
           shrines = List.delete_at(shrines, index)
 
           # Shee Venath
-          index = Enum.find_index(shrines, fn(s) -> s.id = 24 end)
+          index = Enum.find_index(shrines, fn(s) -> s.id == 24 end)
           List.delete_at(shrines, index)
         end
 
         shrines = if opt == "shrouded" do
           # Shrouded Shrine
-          index = Enum.find_index(shrines, fn(s) -> s.id = 111 end)
+          index = Enum.find_index(shrines, fn(s) -> s.id == 111 end)
           List.delete_at(shrines, index)
         end
 
         shrines = if opt == "eventide" do
           # Stranded on Eventide
-          index = Enum.find_index(shrines, fn(s) -> s.id = 36 end)
+          index = Enum.find_index(shrines, fn(s) -> s.id == 36 end)
           List.delete_at(shrines, index)
         end
 
         shrines = if opt == "eventide" do
           # Stranded on Eventide
-          index = Enum.find_index(shrines, fn(s) -> s.id = 36 end)
+          index = Enum.find_index(shrines, fn(s) -> s.id == 36 end)
           List.delete_at(shrines, index)
         end
 
         shrines = if opt == "thunder" do
           # Trial of Thunder
-          index = Enum.find_index(shrines, fn(s) -> s.id = 85 end)
+          index = Enum.find_index(shrines, fn(s) -> s.id == 85 end)
           List.delete_at(shrines, index)
         end
 
         shrines = if opt == "bloody_moon" do
           # Under a Red Moon
-          index = Enum.find_index(shrines, fn(s) -> s.id = 83 end)
+          index = Enum.find_index(shrines, fn(s) -> s.id == 83 end)
           List.delete_at(shrines, index)
         end
 
