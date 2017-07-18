@@ -144,6 +144,7 @@ defmodule MsrtaGen.Util do
           "all"  -> shrine
           "none" -> false
         end
+      end
 
       cond do
         Enum.member?([region, tos, blessing], false) -> nil
