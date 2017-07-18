@@ -1,5 +1,5 @@
 defmodule MsrtaGen.Util do
-  import MsrtaGen.Definitions
+  alias MsrtaGen.Definitions
 
   def gen_seed(length \\ 16) do
     characters = for _x <- 1..length do
