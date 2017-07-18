@@ -169,19 +169,29 @@
   <fieldset>
     <legend>Include Specific Shrines</legend>
 
-    <input id="bloody_moon" type="checkbox" name="other[]" value="bloody_moon">
-    <label for="bloody_moon">Mijah Rokee (Under a Red Moon)</label>
+    <div>
+      <input id="bloody_moon" type="checkbox" name="other[]" value="bloody_moon">
+      <label for="bloody_moon">Mijah Rokee (Under a Red Moon)</label>
+    </div>
 
-    <input id="labyrinths" type="checkbox" name="other[]" value="labyrinths" checked>
-    <label for="labyrinths">Labyrinth Shrines</label>
+    <div>
+      <input id="labyrinths" type="checkbox" name="other[]" value="labyrinths" checked>
+      <label for="labyrinths">Labyrinth Shrines</label>
+    </div>
 
-    <input id="springs" type="checkbox" name="other[]" value="springs" checked>
-    <label for="springs">Spring Shrines</label>
+    <div>
+      <input id="springs" type="checkbox" name="other[]" value="springs" checked>
+      <label for="springs">Spring Shrines</label>
+    </div>
 
-    <input id="eventide" type="checkbox" name="other[]" value="eventide" checked>
-    <label for="eventide">Korgu Chideh (Stranded on Eventide)</label>
+    <div>
+      <input id="eventide" type="checkbox" name="other[]" value="eventide" checked>
+      <label for="eventide">Korgu Chideh (Stranded on Eventide)</label>
+    </div>
 
-    <input id="twin_memories" type="checkbox" name="other[]" value="twin_memories" checked>
-    <label for="twin_memories">Twin Memories Shrines</label>
+    <div>
+      <input id="twin_memories" type="checkbox" name="other[]" value="twin_memories" checked>
+      <label for="twin_memories">Twin Memories Shrines</label>
+    </div>
   </fieldset>
 </form>
