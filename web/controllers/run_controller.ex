@@ -6,7 +6,7 @@ defmodule MsrtaGen.RunController do
   def create(conn, run_params) do
     changeset = Run.changeset(%Run{}, run_params)
 
-    IO.inspect changeset
+    IO.inspect changeset.changes
 
     case Repo.insert(changeset) do
       {:ok, run} ->
