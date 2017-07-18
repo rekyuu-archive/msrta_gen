@@ -190,7 +190,7 @@
     </div>
 
     <div>
-      <input id="twin_memories" type="checkbox" name="other[]" value="twin_memories" checked>
+      <input id="twin_memories" type="checkbox" name="other_opts[]" value="twin_memories" checked>
       <label for="twin_memories">Twin Memories Shrines</label>
     </div>
   </fieldset>
