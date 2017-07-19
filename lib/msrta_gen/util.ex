@@ -181,11 +181,6 @@ defmodule MsrtaGen.Util do
     beasts ++ shrines
   end
 
-  def orb_counter(count, _orbs) when count == 36, do: nil
-  def orb_counter(count, orbs) do
-    orb_counter(count + orbs)
-  end
-
   def gen_run(params) do
     :rand.seed(:exs1024, {String.to_integer(params.seed), 0, 0})
 
