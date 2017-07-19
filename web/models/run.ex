@@ -5,11 +5,11 @@ defmodule MsrtaGen.Run do
     field :seed,              :string
     field :quest_mode,        :boolean
     field :plat_shuffle,      :boolean
-    field :beasts,            {:array, :string}
+    field :beasts,            {:array, :string}, default: []
     field :regions,           {:array, :string}
-    field :tests_of_strength, {:array, :string}
+    field :tests_of_strength, {:array, :string}, default: []
     field :blessings,         :string
-    field :other_opts,        {:array, :string}
+    field :other_opts,        {:array, :string}, default: []
 
     timestamps()
   end

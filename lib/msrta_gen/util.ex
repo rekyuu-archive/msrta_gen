@@ -17,10 +17,10 @@ defmodule MsrtaGen.Util do
 
   def gen_pool(params) do
     # Adds Divine Beasts (x4 chance of pulling)
-    beasts = case params.beasts do
-      nil -> []
-      beasts ->
-        for beast <- beasts do
+    beasts = cond do
+      Map.has_key?(params, :beasts) == false -> []
+      true ->
+        for beast <- params.beasts do
           case beast do
             "medoh" ->
               b = Enum.at Definitions.beasts, 0
@@ -43,19 +43,31 @@ defmodule MsrtaGen.Util do
 
     # Remove shrines that are required by divine beasts but are not selected
     shrines = cond do
-      Enum.member?(params.beasts, "medoh") -> shrines
-      true ->
+      Map.has_key?(params, :beasts) == false ->
         # Recital at Warbler's Nest
         index = Enum.find_index(shrines, fn(s) -> s.id == 93 end)
         List.delete_at(shrines, index)
+      true -> cond do
+        Enum.member?(params.beasts, "medoh") -> shrines
+        true ->
+          # Recital at Warbler's Nest
+          index = Enum.find_index(shrines, fn(s) -> s.id == 93 end)
+          List.delete_at(shrines, index)
+      end
     end
 
     shrines = cond do
-      Enum.member?(params.beasts, "naboris") -> shrines
-      true ->
+      Map.has_key?(params, :beasts) == false ->
         # The Undefeated Champ
         index = Enum.find_index(shrines, fn(s) -> s.id == 103 end)
         List.delete_at(shrines, index)
+      true -> cond do
+        Enum.member?(params.beasts, "naboris") -> shrines
+        true ->
+          # The Undefeated Champ
+          index = Enum.find_index(shrines, fn(s) -> s.id == 103 end)
+          List.delete_at(shrines, index)
+      end
     end
 
     # Removes shrines that are not selected
@@ -154,7 +166,14 @@ defmodule MsrtaGen.Util do
     # Clears shrines from regions, tests of strength, and blessings
     shrines = for shrine <- shrines do
       region = Enum.member?(params.regions, shrine.region)
-      tos = Enum.member?(params.tests_of_strength ++ [nil], shrine.tos)
+
+      tos = cond do
+        Map.has_key?(params, :tests_of_strength) == false ->
+          Enum.member?([nil], shrine.tos)
+        true ->
+          Enum.member?(params.tests_of_strength ++ [nil], shrine.tos)
+      end
+
       blessing = cond do
         shrine.blessing ->
           case params.blessings do
