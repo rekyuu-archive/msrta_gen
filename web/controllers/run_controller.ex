@@ -10,11 +10,11 @@ defmodule MsrtaGen.RunController do
       errors when length(errors) >= 1 ->
         error_list = for error <- errors do
           {key, {reason, _}} = error
-          "#{Atom.to_string(key)}: #{reason}\n"
+          "#{Atom.to_string(key)}: #{reason}"
         end
 
         conn
-        |> put_flash(:error, error_list |> Enum.join)
+        |> put_flash(:error, error_list |> Enum.join(", "))
         |> redirect(to: "/")
       _ ->
         run = Util.gen_run(changeset.changes)
