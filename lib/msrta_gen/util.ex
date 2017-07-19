@@ -137,7 +137,7 @@ defmodule MsrtaGen.Util do
     # Clears shrines from regions, tests of strength, and blessings
     shrines = for shrine <- shrines do
       region = Enum.member?(params.regions, shrine.region)
-      tos = Enum.member?(params.tests_of_strength, shrine.tos)
+      tos = Enum.member?(params.tests_of_strength ++ nil, shrine.tos)
       blessing = cond do
         shrine.blessing ->
           case params.blessings do
