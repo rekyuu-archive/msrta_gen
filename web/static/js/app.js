@@ -19,3 +19,13 @@ import "phoenix_html"
 // paths "./socket" or full ones "web/static/js/socket".
 
 // import socket from "./socket"
+var count = 0
+$(`.quest .goal_${count}`).fadeToggle(500);
+$(".quest .goal").click(function() {
+  $(`.quest .goal_${count}`).fadeToggle(500);
+  count = count + 1;
+
+  setTimeout(function() {
+    $(`.quest .goal_${count}`).fadeToggle(500);
+  },500)
+});

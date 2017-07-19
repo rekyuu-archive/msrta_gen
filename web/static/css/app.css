@@ -43,7 +43,15 @@ a, a:hover {
 a { text-decoration: none; }
 a:hover { text-decoration: underline; }
 
-.segment p {
+.quest .goal:hover {
+  background: rgba(0,0,0,0.66);
+  border: 1px solid rgba(255,255,255,0.33);
+  cursor: pointer;
+}
+
+.quest .goal { display: none; }
+
+.goal p {
   text-align: center;
   width: 100%;
 }
@@ -68,9 +76,9 @@ p.trial {
   border-bottom: 1px solid rgba(255,255,255,0.33);
 }
 
-fieldset, .segment {
+fieldset, .goal {
   background: rgba(0,0,0,0.66);
-  border: none;
+  border: 1px solid rgba(0,0,0,0.66);
   border-radius: 5px;
   padding: 1em;
   margin-bottom: 1em;
