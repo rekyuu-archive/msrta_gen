@@ -55,7 +55,7 @@ defmodule MsrtaGen.Definitions do
         tos: "major",
         quest: %{name: "The Spring of Power", forced: true},
         beast: nil,
-        region: "akkala",
+        region: "Akkala",
         orbs: 1
       }, %{
         id: 1,
@@ -65,7 +65,7 @@ defmodule MsrtaGen.Definitions do
         tos: "minor",
         quest: nil,
         beast: nil,
-        region: "akkala",
+        region: "Akkala",
         orbs: 1
       }, %{
         id: 2,
@@ -75,7 +75,7 @@ defmodule MsrtaGen.Definitions do
         tos: "modest",
         quest: nil,
         beast: nil,
-        region: "akkala",
+        region: "Akkala",
         orbs: 1
       }, %{
         id: 3,
@@ -85,7 +85,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "akkala",
+        region: "Akkala",
         orbs: 1
       }, %{
         id: 4,
@@ -95,7 +95,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: %{name: "Into the Vortex", forced: true},
         beast: nil,
-        region: "akkala",
+        region: "Akkala",
         orbs: 1
       }, %{
         id: 5,
@@ -105,7 +105,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: %{name: "Trial of the Labyrinth", forced: false},
         beast: nil,
-        region: "akkala",
+        region: "Akkala",
         orbs: 1
       }, %{
         id: 6,
@@ -115,7 +115,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "akkala",
+        region: "Akkala",
         orbs: 1
       }, %{
         id: 7,
@@ -125,7 +125,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: %{name: "The Skull's Eye", forced: false},
         beast: nil,
-        region: "akkala",
+        region: "Akkala",
         orbs: 1
       }, %{
         id: 8,
@@ -135,7 +135,7 @@ defmodule MsrtaGen.Definitions do
         tos: "major",
         quest: nil,
         beast: nil,
-        region: "central",
+        region: "Central",
         orbs: 1
       }, %{
         id: 9,
@@ -145,7 +145,7 @@ defmodule MsrtaGen.Definitions do
         tos: "minor",
         quest: nil,
         beast: nil,
-        region: "central",
+        region: "Central",
         orbs: 1
       }, %{
         id: 10,
@@ -155,7 +155,7 @@ defmodule MsrtaGen.Definitions do
         tos: "minor",
         quest: nil,
         beast: nil,
-        region: "central",
+        region: "Central",
         orbs: 1
       }, %{
         id: 11,
@@ -165,7 +165,7 @@ defmodule MsrtaGen.Definitions do
         tos: "modest",
         quest: nil,
         beast: nil,
-        region: "central",
+        region: "Central",
         orbs: 1
       }, %{
         id: 12,
@@ -175,7 +175,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "central",
+        region: "Central",
         orbs: 1
       }, %{
         id: 13,
@@ -185,7 +185,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "central",
+        region: "Central",
         orbs: 1
       }, %{
         id: 14,
@@ -195,7 +195,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "central",
+        region: "Central",
         orbs: 1
       }, %{
         id: 15,
@@ -205,7 +205,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "central",
+        region: "Central",
         orbs: 1
       }, %{
         id: 16,
@@ -305,7 +305,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "eldin",
+        region: "Eldin",
         orbs: 1
       }, %{
         id: 26,
@@ -315,7 +315,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "eldin",
+        region: "Eldin",
         orbs: 1
       }, %{
         id: 27,
@@ -325,7 +325,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: %{name: "The Gut Check Challenge", forced: true},
         beast: nil,
-        region: "eldin",
+        region: "Eldin",
         orbs: 1
       }, %{
         id: 28,
@@ -335,7 +335,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: %{name: "A Brother's Roast", forced: true},
         beast: nil,
-        region: "eldin",
+        region: "Eldin",
         orbs: 1
       }, %{
         id: 29,
@@ -345,7 +345,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "eldin",
+        region: "Eldin",
         orbs: 1
       }, %{
         id: 30,
@@ -355,7 +355,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: %{name: "A Landscape of a Stable", forced: false},
         beast: nil,
-        region: "eldin",
+        region: "Eldin",
         orbs: 1
       }, %{
         id: 31,
@@ -365,7 +365,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "eldin",
+        region: "Eldin",
         orbs: 1
       }, %{
         id: 32,
@@ -375,7 +375,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "eldin",
+        region: "Eldin",
         orbs: 1
       }, %{
         id: 33,
@@ -385,7 +385,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "eldin",
+        region: "Eldin",
         orbs: 1
       }, %{
         id: 34,
@@ -395,7 +395,7 @@ defmodule MsrtaGen.Definitions do
         tos: "modest",
         quest: nil,
         beast: nil,
-        region: "faron",
+        region: "Faron",
         orbs: 1
       }, %{
         id: 35,
@@ -405,7 +405,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "faron",
+        region: "Faron",
         orbs: 1
       }, %{
         id: 36,
@@ -415,7 +415,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: %{name: "Stranded on Eventide", forced: true},
         beast: nil,
-        region: "faron",
+        region: "Faron",
         orbs: 1
       }, %{
         id: 37,
@@ -425,7 +425,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "faron",
+        region: "Faron",
         orbs: 1
       }, %{
         id: 38,
@@ -435,7 +435,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "faron",
+        region: "Faron",
         orbs: 1
       }, %{
         id: 39,
@@ -445,7 +445,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: %{name: "A Fragmented Monument", forced: true},
         beast: nil,
-        region: "faron",
+        region: "Faron",
         orbs: 1
       }, %{
         id: 40,
@@ -455,7 +455,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: %{name: "A Song of Storms", forced: true},
         beast: nil,
-        region: "faron",
+        region: "Faron",
         orbs: 1
       }, %{
         id: 41,
@@ -465,7 +465,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: %{name: "The Three Giant Brothers", forced: true},
         beast: nil,
-        region: "faron",
+        region: "Faron",
         orbs: 1
       }, %{
         id: 42,
@@ -475,7 +475,7 @@ defmodule MsrtaGen.Definitions do
         tos: "major",
         quest: nil,
         beast: nil,
-        region: "gerudo",
+        region: "Gerudo",
         orbs: 1
       }, %{
         id: 43,
@@ -485,7 +485,7 @@ defmodule MsrtaGen.Definitions do
         tos: "minor",
         quest: nil,
         beast: nil,
-        region: "gerudo",
+        region: "Gerudo",
         orbs: 1
       }, %{
         id: 44,
@@ -495,7 +495,7 @@ defmodule MsrtaGen.Definitions do
         tos: "modest",
         quest: %{name: "Sign of the Shadow", forced: true},
         beast: nil,
-        region: "gerudo",
+        region: "Gerudo",
         orbs: 1
       }, %{
         id: 45,
@@ -505,7 +505,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: %{name: "Test of Will", forced: true},
         beast: nil,
-        region: "gerudo",
+        region: "Gerudo",
         orbs: 1
       }, %{
         id: 46,
@@ -515,7 +515,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: %{name: "Cliffside Etchings", forced: true},
         beast: nil,
-        region: "gerudo",
+        region: "Gerudo",
         orbs: 1
       }, %{
         id: 47,
@@ -525,7 +525,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "gerudo",
+        region: "Gerudo",
         orbs: 1
       }, %{
         id: 48,
@@ -535,7 +535,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "gerudo",
+        region: "Gerudo",
         orbs: 1
       }, %{
         id: 49,
@@ -545,7 +545,7 @@ defmodule MsrtaGen.Definitions do
         tos: "major",
         quest: nil,
         beast: nil,
-        region: "hateno",
+        region: "Hateno",
         orbs: 1
       }, %{
         id: 50,
@@ -555,7 +555,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: %{name: "The Crowned Beast", forced: true},
         beast: nil,
-        region: "hateno",
+        region: "Hateno",
         orbs: 1
       }, %{
         id: 51,
@@ -565,7 +565,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: %{name: "The Spring of Wisdom", forced: true},
         beast: nil,
-        region: "hateno",
+        region: "Hateno",
         orbs: 1
       }, %{
         id: 52,
@@ -575,7 +575,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "hateno",
+        region: "Hateno",
         orbs: 1
       }, %{
         id: 53,
@@ -585,7 +585,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: %{name: "Secret of the Cedars", forced: false},
         beast: nil,
-        region: "hateno",
+        region: "Hateno",
         orbs: 1
       }, %{
         id: 54,
@@ -595,7 +595,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "hateno",
+        region: "Hateno",
         orbs: 1
       }, %{
         id: 55,
@@ -605,7 +605,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: %{name: "The Cursed Statue", forced: true},
         beast: nil,
-        region: "hateno",
+        region: "Hateno",
         orbs: 1
       }, %{
         id: 56,
@@ -615,7 +615,7 @@ defmodule MsrtaGen.Definitions do
         tos: "major",
         quest: nil,
         beast: nil,
-        region: "hebra",
+        region: "Hebra",
         orbs: 1
       }, %{
         id: 57,
@@ -625,7 +625,7 @@ defmodule MsrtaGen.Definitions do
         tos: "major",
         quest: nil,
         beast: nil,
-        region: "hebra",
+        region: "Hebra",
         orbs: 1
       }, %{
         id: 58,
@@ -635,7 +635,7 @@ defmodule MsrtaGen.Definitions do
         tos: "major",
         quest: %{name: "The Bird in the Mountains", forced: false},
         beast: nil,
-        region: "hebra",
+        region: "Hebra",
         orbs: 1
       }, %{
         id: 59,
@@ -645,7 +645,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "hebra",
+        region: "Hebra",
         orbs: 1
       }, %{
         id: 60,
@@ -655,7 +655,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "hebra",
+        region: "Hebra",
         orbs: 1
       }, %{
         id: 61,
@@ -665,7 +665,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "hebra",
+        region: "Hebra",
         orbs: 1
       }, %{
         id: 62,
@@ -675,7 +675,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "hebra",
+        region: "Hebra",
         orbs: 1
       }, %{
         id: 63,
@@ -685,7 +685,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: %{name: "Trial on the Cliff", forced: false},
         beast: nil,
-        region: "hebra",
+        region: "Hebra",
         orbs: 1
       }, %{
         id: 64,
@@ -695,7 +695,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "hebra",
+        region: "Hebra",
         orbs: 1
       }, %{
         id: 65,
@@ -705,7 +705,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "hebra",
+        region: "Hebra",
         orbs: 1
       }, %{
         id: 66,
@@ -715,7 +715,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "hebra",
+        region: "Hebra",
         orbs: 1
       }, %{
         id: 67,
@@ -725,7 +725,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "hebra",
+        region: "Hebra",
         orbs: 1
       }, %{
         id: 68,
@@ -735,7 +735,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "hebra",
+        region: "Hebra",
         orbs: 1
       }, %{
         id: 69,
@@ -745,7 +745,7 @@ defmodule MsrtaGen.Definitions do
         tos: "minor",
         quest: nil,
         beast: nil,
-        region: "lake",
+        region: "Lake",
         orbs: 1
       }, %{
         id: 70,
@@ -755,7 +755,7 @@ defmodule MsrtaGen.Definitions do
         tos: "modest",
         quest: %{name: "Guardian Slideshow", forced: false},
         beast: nil,
-        region: "lake",
+        region: "Lake",
         orbs: 1
       }, %{
         id: 71,
@@ -765,7 +765,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "lake",
+        region: "Lake",
         orbs: 1
       }, %{
         id: 72,
@@ -775,7 +775,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "lake",
+        region: "Lake",
         orbs: 1
       }, %{
         id: 73,
@@ -785,7 +785,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: %{name: "The Serpent's Jaws", forced: true},
         beast: nil,
-        region: "lake",
+        region: "Lake",
         orbs: 1
       }, %{
         id: 74,
@@ -795,7 +795,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "lake",
+        region: "Lake",
         orbs: 1
       }, %{
         id: 75,
@@ -805,7 +805,7 @@ defmodule MsrtaGen.Definitions do
         tos: "minor",
         quest: nil,
         beast: nil,
-        region: "lanayru",
+        region: "Lanayru",
         orbs: 1
       }, %{
         id: 76,
@@ -815,7 +815,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: %{name: "The Ceremonial Song", forced: true},
         beast: nil,
-        region: "lanayru",
+        region: "Lanayru",
         orbs: 1
       }, %{
         id: 77,
@@ -825,7 +825,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "lanayru",
+        region: "Lanayru",
         orbs: 1
       }, %{
         id: 78,
@@ -835,7 +835,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "lanayru",
+        region: "Lanayru",
         orbs: 1
       }, %{
         id: 79,
@@ -845,7 +845,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "lanayru",
+        region: "Lanayru",
         orbs: 1
       }, %{
         id: 80,
@@ -855,7 +855,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: %{name: "Master of the Wind", forced: true},
         beast: nil,
-        region: "lanayru",
+        region: "Lanayru",
         orbs: 1
       }, %{
         id: 81,
@@ -865,7 +865,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "lanayru",
+        region: "Lanayru",
         orbs: 1
       }, %{
         id: 82,
@@ -875,7 +875,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "lanayru",
+        region: "Lanayru",
         orbs: 1
       }, %{
         id: 83,
@@ -885,7 +885,7 @@ defmodule MsrtaGen.Definitions do
         tos: "modest",
         quest: %{name: "Under a Red Moon", forced: true},
         beast: nil,
-        region: "ridgeland",
+        region: "Ridgeland",
         orbs: 1
       }, %{
         id: 84,
@@ -895,7 +895,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "ridgeland",
+        region: "Ridgeland",
         orbs: 1
       }, %{
         id: 85,
@@ -905,7 +905,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: %{name: "Trial of Thunder", forced: true},
         beast: nil,
-        region: "ridgeland",
+        region: "Ridgeland",
         orbs: 1
       }, %{
         id: 86,
@@ -915,7 +915,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "ridgeland",
+        region: "Ridgeland",
         orbs: 1
       }, %{
         id: 87,
@@ -925,7 +925,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: %{name: "The Two Rings", forced: true},
         beast: nil,
-        region: "ridgeland",
+        region: "Ridgeland",
         orbs: 1
       }, %{
         id: 88,
@@ -935,7 +935,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "ridgeland",
+        region: "Ridgeland",
         orbs: 1
       }, %{
         id: 89,
@@ -945,7 +945,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "ridgeland",
+        region: "Ridgeland",
         orbs: 1
       }, %{
         id: 90,
@@ -955,7 +955,7 @@ defmodule MsrtaGen.Definitions do
         tos: "major",
         quest: nil,
         beast: nil,
-        region: "tabantha",
+        region: "Tabantha",
         orbs: 1
       }, %{
         id: 91,
@@ -965,7 +965,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: %{name: "The Ancient Rito Song", forced: true},
         beast: nil,
-        region: "tabantha",
+        region: "Tabantha",
         orbs: 1
       }, %{
         id: 92,
@@ -975,7 +975,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "tabantha",
+        region: "Tabantha",
         orbs: 1
       }, %{
         id: 93,
@@ -985,7 +985,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: %{name: "Recital at Warbler's Nest", forced: true},
         beast: "medoh",
-        region: "tabantha",
+        region: "Tabantha",
         orbs: 1
       }, %{
         id: 94,
@@ -995,7 +995,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "tabantha",
+        region: "Tabantha",
         orbs: 1
       }, %{
         id: 95,
@@ -1005,7 +1005,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "tabantha",
+        region: "Tabantha",
         orbs: 1
       }, %{
         id: 96,
@@ -1015,7 +1015,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: %{name: "The Silent Swordswomen", forced: false},
         beast: nil,
-        region: "wasteland",
+        region: "Wasteland",
         orbs: 1
       }, %{
         id: 97,
@@ -1025,7 +1025,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: %{name: "The Desert Labyrinth", forced: false},
         beast: nil,
-        region: "wasteland",
+        region: "Wasteland",
         orbs: 1
       }, %{
         id: 98,
@@ -1035,7 +1035,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: %{name: "The Eye of the Sandstorm", forced: false},
         beast: nil,
-        region: "wasteland",
+        region: "Wasteland",
         orbs: 1
       }, %{
         id: 99,
@@ -1045,7 +1045,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: %{name: "The Seven Heroines", forced: true},
         beast: nil,
-        region: "wasteland",
+        region: "Wasteland",
         orbs: 1
       }, %{
         id: 100,
@@ -1055,7 +1055,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: %{name: "The Perfect Drink", forced: true},
         beast: nil,
-        region: "wasteland",
+        region: "Wasteland",
         orbs: 1
       }, %{
         id: 101,
@@ -1065,7 +1065,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "wasteland",
+        region: "Wasteland",
         orbs: 1
       }, %{
         id: 102,
@@ -1075,7 +1075,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "wasteland",
+        region: "Wasteland",
         orbs: 1
       }, %{
         id: 103,
@@ -1085,7 +1085,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: %{name: "The Undefeated Champ", forced: true},
         beast: "naboris",
-        region: "wasteland",
+        region: "Wasteland",
         orbs: 1
       }, %{
         id: 104,
@@ -1095,7 +1095,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: %{name: "Secret of the Snowy Peaks", forced: true},
         beast: nil,
-        region: "wasteland",
+        region: "Wasteland",
         orbs: 1
       }, %{
         id: 105,
@@ -1105,7 +1105,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "wasteland",
+        region: "Wasteland",
         orbs: 1
       }, %{
         id: 106,
@@ -1115,7 +1115,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "wasteland",
+        region: "Wasteland",
         orbs: 1
       }, %{
         id: 107,
@@ -1125,7 +1125,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "wasteland",
+        region: "Wasteland",
         orbs: 1
       }, %{
         id: 108,
@@ -1135,7 +1135,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: %{name: "The Lost Pilgrimage", forced: true},
         beast: nil,
-        region: "woodland",
+        region: "Woodland",
         orbs: 1
       }, %{
         id: 109,
@@ -1145,7 +1145,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "woodland",
+        region: "Woodland",
         orbs: 1
       }, %{
         id: 110,
@@ -1155,7 +1155,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "woodland",
+        region: "Woodland",
         orbs: 1
       }, %{
         id: 111,
@@ -1165,7 +1165,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: %{name: "Shrouded Shrine", forced: true},
         beast: nil,
-        region: "woodland",
+        region: "Woodland",
         orbs: 1
       }, %{
         id: 112,
@@ -1175,7 +1175,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: %{name: "Trial of Second Sight", forced: true},
         beast: nil,
-        region: "woodland",
+        region: "Woodland",
         orbs: 1
       }, %{
         id: 113,
@@ -1185,7 +1185,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: %{name: "The Test of Wood", forced: true},
         beast: nil,
-        region: "woodland",
+        region: "Woodland",
         orbs: 1
       }, %{
         id: 114,
@@ -1195,7 +1195,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "woodland",
+        region: "Woodland",
         orbs: 1
       }, %{
         id: 115,
@@ -1205,7 +1205,7 @@ defmodule MsrtaGen.Definitions do
         tos: nil,
         quest: nil,
         beast: nil,
-        region: "woodland",
+        region: "Woodland",
         orbs: 1
       }
     ]
@@ -1216,127 +1216,31 @@ defmodule MsrtaGen.Definitions do
       %{
         id: 0,
         name: "Divine Beast Vah Medoh",
-        region: "tabantha",
+        region: "Tabantha",
         trial: nil,
         quest: nil,
         orbs: 4
       }, %{
         id: 1,
         name: "Divine Beast Vah Naboris",
-        region: "wasteland",
+        region: "Wasteland",
         trial: nil,
         quest: nil,
         orbs: 4
       }, %{
         id: 2,
         name: "Divine Beast Vah Rudania",
-        region: "eldin",
+        region: "Eldin",
         trial: nil,
         quest: nil,
         orbs: 4
       }, %{
         id: 3,
         name: "Divine Beast Vah Ruta",
-        region: "lanayru",
+        region: "Lanayru",
         trial: nil,
         quest: nil,
         orbs: 4
-      }
-    ]
-  end
-
-  def regions do
-    [
-      %{
-        id: 0,
-        name: "Great Plateau",
-        short: "plateau",
-        beast: false,
-        shrines: 4
-      }, %{
-        id: 1,
-        name: "Akkala",
-        short: "akkala",
-        beast: false,
-        shrines: 8
-      }, %{
-        id: 2,
-        name: "Central Hyrule",
-        short: "central",
-        beast: false,
-        shrines: 8
-      }, %{
-        id: 3,
-        name: "Dueling Peaks",
-        short: "dp",
-        beast: false,
-        shrines: 9
-      }, %{
-        id: 4,
-        name: "Eldin",
-        short: "eldin",
-        beast: true,
-        shrines: 9
-      }, %{
-        id: 5,
-        name: "Faron",
-        short: "faron",
-        beast: false,
-        shrines: 8
-      }, %{
-        id: 6,
-        name: "Gerudo Highlands",
-        short: "gerudo",
-        beast: false,
-        shrines: 7
-      }, %{
-        id: 7,
-        name: "Hateno",
-        short: "hateno",
-        beast: false,
-        shrines: 7
-      }, %{
-        id: 8,
-        name: "Hebra",
-        short: "hebra",
-        beast: false,
-        shrines: 13
-      }, %{
-        id: 9,
-        name: "Lake",
-        short: "lake",
-        beast: false,
-        shrines: 6
-      }, %{
-        id: 10,
-        name: "Lanayru",
-        short: "lanayru",
-        beast: true,
-        shrines: 8
-      }, %{
-        id: 11,
-        name: "Ridgeland",
-        short: "ridgeland",
-        beast: false,
-        shrines: 7
-      }, %{
-        id: 12,
-        name: "Tabantha",
-        short: "tabantha",
-        beast: true,
-        shrines: 6
-      }, %{
-        id: 13,
-        name: "Gerudo Wasteland",
-        short: "wasteland",
-        beast: true,
-        shrines: 12
-      }, %{
-        id: 14,
-        name: "Woodland",
-        short: "woodland",
-        beast: false,
-        shrines: 8
       }
     ]
   end

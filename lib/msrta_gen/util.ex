@@ -205,7 +205,7 @@ defmodule MsrtaGen.Util do
 
     plateau = case params.plat_shuffle do
       true -> gen_plateau(params.seed)
-      false -> nil
+      false -> []
     end
 
     shrine_pool = gen_pool(params)
@@ -272,6 +272,7 @@ defmodule MsrtaGen.Util do
           true -> pool
         end
 
+        pool = plateau ++ pool
         {:ok, pool}
     end
   end

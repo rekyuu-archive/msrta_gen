@@ -88,6 +88,16 @@ fieldset.error {
   background: rgba(63,0,0,0.66);
 }
 
+fieldset table td:first-child {
+  text-align: right;
+  vertical-align: top;
+  width: 25%;
+}
+
+fieldset table td {
+  padding: 0 .5em;
+}
+
 legend {
   background: rgba(0,0,0,0);
   text-shadow: 0 0 10px black;

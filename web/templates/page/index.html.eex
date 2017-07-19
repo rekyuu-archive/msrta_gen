@@ -38,7 +38,7 @@
     <label for="shuffle_true">Yes</label>
 
     <input id="shuffle_false" type="radio" name="plat_shuffle" value="false">
-    <label for="shuffle_false">No</label>
+    <label for="shuffle_false">No (Plateau shrines will not be included)</label>
   </fieldset>
 
   <fieldset>
@@ -71,72 +71,72 @@
     <p style="margin-top: 0">Only include shrines from selected regions.</p>
 
     <div>
-      <input id="akkala" type="checkbox" name="regions[]" value="akkala" checked>
+      <input id="akkala" type="checkbox" name="regions[]" value="Akkala" checked>
       <label for="akkala">Akkala</label>
     </div>
 
     <div>
-      <input id="central" type="checkbox" name="regions[]" value="central" checked>
+      <input id="central" type="checkbox" name="regions[]" value="Central" checked>
       <label for="central">Central Hyrule</label>
     </div>
 
     <div>
-      <input id="dueling_peaks" type="checkbox" name="regions[]" value="dueling_peaks" checked>
+      <input id="dueling_peaks" type="checkbox" name="regions[]" value="Dueling Peaks" checked>
       <label for="dueling_peaks">Dueling Peaks</label>
     </div>
 
     <div>
-      <input id="eldin" type="checkbox" name="regions[]" value="eldin" checked>
+      <input id="eldin" type="checkbox" name="regions[]" value="Eldin" checked>
       <label for="eldin">Eldin</label>
     </div>
 
     <div>
-      <input id="faron" type="checkbox" name="regions[]" value="faron" checked>
+      <input id="faron" type="checkbox" name="regions[]" value="Faron" checked>
       <label for="faron">Faron</label>
     </div>
 
     <div>
-      <input id="gerudo" type="checkbox" name="regions[]" value="gerudo" checked>
+      <input id="gerudo" type="checkbox" name="regions[]" value="Gerudo" checked>
       <label for="gerudo">Gerudo</label>
     </div>
 
     <div>
-      <input id="hateno" type="checkbox" name="regions[]" value="hateno" checked>
+      <input id="hateno" type="checkbox" name="regions[]" value="Hateno" checked>
       <label for="hateno">Hateno</label>
     </div>
 
     <div>
-      <input id="hebra" type="checkbox" name="regions[]" value="hebra" checked>
+      <input id="hebra" type="checkbox" name="regions[]" value="Hebra" checked>
       <label for="hebra">Hebra</label>
     </div>
 
     <div>
-      <input id="lake" type="checkbox" name="regions[]" value="lake" checked>
+      <input id="lake" type="checkbox" name="regions[]" value="Lake" checked>
       <label for="lake">Lake</label>
     </div>
 
     <div>
-      <input id="lanayru" type="checkbox" name="regions[]" value="lanayru" checked>
+      <input id="lanayru" type="checkbox" name="regions[]" value="Lanayru" checked>
       <label for="lanayru">Lanayru</label>
     </div>
 
     <div>
-      <input id="ridgeland" type="checkbox" name="regions[]" value="ridgeland" checked>
+      <input id="ridgeland" type="checkbox" name="regions[]" value="Ridgeland" checked>
       <label for="ridgeland">Ridgeland</label>
     </div>
 
     <div>
-      <input id="tabantha" type="checkbox" name="regions[]" value="tabantha" checked>
+      <input id="tabantha" type="checkbox" name="regions[]" value="Tabantha" checked>
       <label for="tabantha">Tabantha</label>
     </div>
 
     <div>
-      <input id="wasteland" type="checkbox" name="regions[]" value="wasteland" checked>
+      <input id="wasteland" type="checkbox" name="regions[]" value="Wasteland" checked>
       <label for="wasteland">Wasteland</label>
     </div>
 
     <div>
-      <input id="woodland" type="checkbox" name="regions[]" value="woodland" checked>
+      <input id="woodland" type="checkbox" name="regions[]" value="Woodland" checked>
       <label for="woodland">Woodland</label>
     </div>
   </fieldset>

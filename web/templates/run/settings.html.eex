@@ -1,0 +1,83 @@
+<fieldset>
+  <legend>Run Settings</legend>
+
+  <table>
+    <tr>
+      <td><b>Seed</b></td>
+      <td><%= @run.seed %></td>
+    </tr>
+
+    <tr>
+      <td><b>Quest Mode</b></td>
+      <td><%= @run.quest_mode %></td>
+    </tr>
+
+    <tr>
+      <td><b>Plateau Shuffle</b></td>
+      <td><%= @run.plat_shuffle %></td>
+    </tr>
+
+    <tr>
+      <td><b>Divine Beasts</b></td>
+      <td><%= beasts = for beast <- @run.beasts do
+          "Vah #{beast |> String.capitalize}"
+        end
+
+        case beasts do
+          [] -> "None"
+          beasts -> beasts |> Enum.join ", "
+        end %>
+      </td>
+    </tr>
+
+    <tr>
+      <td><b>Regions</b></td>
+      <td><%= regions = for region <- @run.regions do
+          region
+        end
+
+        regions |> Enum.join ", " %>
+      </td>
+    </tr>
+
+    <tr>
+      <td><b>Tests of Strength</b></td>
+      <td><%= tests = for test <- @run.tests_of_strength do
+          "#{test |> String.capitalize}"
+        end
+
+        case tests do
+          [] -> "None"
+          tests -> tests |> Enum.join ", "
+        end %>
+      </td>
+    </tr>
+
+    <tr>
+      <td><b>Blessing Shrines</b></td>
+      <td><%= @run.blessings |> String.capitalize %></td>
+    </tr>
+
+    <tr>
+      <td><b>Other</b></td>
+      <td><%= others = for opt <- @run.other_opts do
+          case opt do
+            "camera" -> "Include Camera required shrines"
+            "labyrinths" -> "Include Labyrinth shrines"
+            "springs" -> "Include Spring shrines"
+            "twin_memories" -> "Include \"Twin Memories\""
+            "shrouded" -> "Include \"Shrouded Shrine\""
+            "eventide" -> "Include \"Stranded on Eventide\""
+            "thunder" -> "Include \"Trial of Thunder\""
+            "bloody_moon" -> "Include \"Under a Red Moon\""
+          end
+        end
+
+        case others do
+          [] -> "None"
+          others -> others |> Enum.join ", "
+        end %>
+      </td>
+    </tr>
+  </table>
+</fieldset>
