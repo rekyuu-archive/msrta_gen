@@ -61,7 +61,7 @@
   <fieldset>
     <legend>Regions</legend>
 
-    <p style="margin-top: 0">The following will only remove shrines from unchecked regions.</p>
+    <p style="margin-top: 0">Only include shrines from selected regions.</p>
 
     <div>
       <input id="akkala" type="checkbox" name="regions[]" value="akkala" checked>

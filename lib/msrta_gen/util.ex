@@ -41,6 +41,27 @@ defmodule MsrtaGen.Util do
     # Inits all shrines
     shrines = Definitions.shrines
 
+    # Remove shrines that are required by divine beasts but are not selected
+    shrines = cond do
+      Enum.member?(params.beasts, "medoh") -> shrines
+      true ->
+        # Recital at Warbler's Nest
+        index = Enum.find_index(shrines, fn(s) -> s.id == 93 end)
+        List.delete_at(shrines, index)
+    end
+
+    shrines = cond do
+      Enum.member?(params.beasts, "naboris") -> shrines
+      true ->
+        # The Perfect Drink
+        index = Enum.find_index(shrines, fn(s) -> s.id == 100 end)
+        shrines = List.delete_at(shrines, index)
+
+        # The Undefeated Champ
+        index = Enum.find_index(shrines, fn(s) -> s.id == 103 end)
+        List.delete_at(shrines, index)
+    end
+
     # Removes shrines that are not selected
     shrines = cond do
       Enum.member?(params.other_opts, "camera") -> shrines
