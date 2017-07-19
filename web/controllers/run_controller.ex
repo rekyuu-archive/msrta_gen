@@ -24,16 +24,16 @@ defmodule MsrtaGen.RunController do
             case Repo.insert(changeset) do
               {:ok, run} ->
                 redirect conn, to: "/run/#{run.id}"
-              {:error, _changeset} ->
+              {:error, changeset} ->
+                IO.inspect changeset
+
                 conn
-                |> put_flash(:error, "u fricked up bro")
+                |> put_flash(:error, "Unknown error!")
                 |> redirect(to: "/")
             end
-          {:error, changeset} ->
-            IO.inspect changeset
-
+          {:error, error} ->
             conn
-            |> put_flash(:error, "Unknown error!")
+            |> put_flash(:error, error)
             |> redirect(to: "/")
         end
     end
