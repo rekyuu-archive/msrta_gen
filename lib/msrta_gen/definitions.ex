@@ -1216,22 +1216,22 @@ defmodule MsrtaGen.Definitions do
       %{
         id: 0,
         name: "Divine Beast Vah Medoh",
-        region: "Tabantha",
+        region: "tabantha",
         orbs: 4
       }, %{
         id: 1,
         name: "Divine Beast Vah Naboris",
-        region: "Wasteland",
+        region: "wasteland",
         orbs: 4
       }, %{
         id: 2,
         name: "Divine Beast Vah Rudania",
-        region: "Eldin",
+        region: "eldin",
         orbs: 4
       }, %{
         id: 3,
         name: "Divine Beast Vah Ruta",
-        region: "Lanayru",
+        region: "lanayru",
         orbs: 4
       }
     ]
