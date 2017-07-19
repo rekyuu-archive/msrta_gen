@@ -142,6 +142,7 @@ defmodule MsrtaGen.Util do
         case params.blessings do
           "quests" ->
             cond do
+              shrine.quest == nil -> shrine
               shrine.quest.forced -> shrine
               true -> false
             end
