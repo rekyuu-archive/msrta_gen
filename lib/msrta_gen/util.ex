@@ -157,6 +157,8 @@ defmodule MsrtaGen.Util do
       end
     end
 
+    shrines = shrines |> Enum.uniq |> List.delete(nil)
+
     beasts ++ shrines
   end
 
