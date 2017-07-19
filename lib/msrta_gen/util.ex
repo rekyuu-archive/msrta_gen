@@ -118,6 +118,8 @@ defmodule MsrtaGen.Util do
       List.delete_at(shrines, index)
     end
 
+    IO.inspect shrines
+
     # Clears shrines from regions, tests of strength, and blessings
     shrines = for shrine <- shrines do
       region = Enum.member?(params.regions, shrine.region)
