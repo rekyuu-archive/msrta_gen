@@ -53,10 +53,6 @@ defmodule MsrtaGen.Util do
     shrines = cond do
       Enum.member?(params.beasts, "naboris") -> shrines
       true ->
-        # The Perfect Drink
-        index = Enum.find_index(shrines, fn(s) -> s.id == 100 end)
-        shrines = List.delete_at(shrines, index)
-
         # The Undefeated Champ
         index = Enum.find_index(shrines, fn(s) -> s.id == 103 end)
         List.delete_at(shrines, index)
@@ -185,8 +181,12 @@ defmodule MsrtaGen.Util do
     beasts ++ shrines
   end
 
+  def orb_counter(count, _orbs) when count == 36, do: nil
+  def orb_counter(count, orbs) do
+    orb_counter(count + orbs)
+  end
+
   def gen_run(params) do
-    total_orbs = 36
     :rand.seed(:exs1024, {String.to_integer(params.seed), 0, 0})
 
     plateau = case params.plat_shuffle do
@@ -194,10 +194,71 @@ defmodule MsrtaGen.Util do
       false -> nil
     end
 
-    IO.inspect plateau
-
     shrine_pool = gen_pool(params)
+    cond do
+      length(shrine_pool) < 36 ->
+        {:error, "Not enough parameters to complete a run."}
+      true ->
+        pool = Enum.take_random(shrine_pool, 36) |> Enum.uniq
+        beast_pool = Enum.filter(pool, fn(s) -> s.orbs == 4 end)
+        shrine_pool = Enum.filter(pool, fn(s) -> s.orbs == 1 end)
 
-    IO.inspect shrine_pool
+        # Check to remove shrines required by beasts if they did not make it in
+        medoh = Enum.find(beast_pool, fn(b) -> b.id == 0 end)
+        nest = Enum.find(shrine_pool, fn(s) -> s.id == 93 end)
+
+        naboris = Enum.find(beast_pool, fn(b) -> b.id == 1 end)
+        champ = Enum.find(shrine_pool, fn(s) -> s.id == 103 end)
+
+        shrine_pool = case {medoh, nest} do
+          {nil, nil} -> shrine_pool
+          {_medoh, nil} -> shrine_pool
+          {nil, _nest} ->
+            index = Enum.find_index(shrine_pool, fn(s) -> s.id == 93 end)
+            List.delete_at(shrine_pool, index)
+          {_medoh, _nest} -> shrine_pool
+        end
+
+        shrine_pool = case {naboris, champ} do
+          {nil, nil} -> shrine_pool
+          {_naboris, nil} -> shrine_pool
+          {nil, _champ} ->
+            index = Enum.find_index(shrine_pool, fn(s) -> s.id == 103 end)
+            List.delete_at(shrine_pool, index)
+          {_naboris, _champ} -> shrine_pool
+        end
+
+        # Generate the final list and shuffle it
+        pool = Enum.take_random(shrine_pool, 36 - length(beast_pool) * 4) ++ beast_pool |> Enum.shuffle
+
+        # Verify that a beast required quest does not come before the beast
+        medoh_index = Enum.find_index(pool, fn(b) -> b.id == 0 end)
+        nest_index = Enum.find_index(pool, fn(s) -> s.id == 93 end)
+
+        naboris_index = Enum.find_index(pool, fn(b) -> b.id == 1 end)
+        champ_index = Enum.find_index(pool, fn(s) -> s.id == 103 end)
+
+        pool = cond do
+          nest_index == nil -> pool
+          medoh_index == nil -> pool
+          nest_index > medoh_index -> pool
+          nest_index < medoh_index ->
+            pool = List.delete_at(pool, nest_index)
+            List.insert_at(pool, Enum.random(medoh_index..length(pool)), nest)
+          true -> pool
+        end
+
+        pool = cond do
+          champ_index == nil -> pool
+          naboris_index == nil -> pool
+          champ_index > naboris_index -> pool
+          champ_index < naboris_index ->
+            pool = List.delete_at(pool, champ_index)
+            List.insert_at(pool, Enum.random(naboris_index..length(pool)), champ)
+          true -> pool
+        end
+
+        pool
+    end
   end
 end

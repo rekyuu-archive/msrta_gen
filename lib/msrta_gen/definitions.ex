@@ -1054,7 +1054,7 @@ defmodule MsrtaGen.Definitions do
         blessing: true,
         tos: nil,
         quest: %{name: "The Perfect Drink", forced: true},
-        beast: "naboris",
+        beast: nil,
         region: "wasteland",
         orbs: 1
       }, %{
