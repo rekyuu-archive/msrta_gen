@@ -11,6 +11,7 @@ defmodule MsrtaGen.Repo.Migrations.CreateRun do
       add :tests_of_strength, {:array, :string}
       add :blessings,         :string
       add :other_opts,        {:array, :string}
+      add :run,               {:array, :map}
 
       timestamps()
     end
