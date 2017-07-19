@@ -1217,21 +1217,29 @@ defmodule MsrtaGen.Definitions do
         id: 0,
         name: "Divine Beast Vah Medoh",
         region: "tabantha",
+        trial: nil,
+        quest: nil,
         orbs: 4
       }, %{
         id: 1,
         name: "Divine Beast Vah Naboris",
         region: "wasteland",
+        trial: nil,
+        quest: nil,
         orbs: 4
       }, %{
         id: 2,
         name: "Divine Beast Vah Rudania",
         region: "eldin",
+        trial: nil,
+        quest: nil,
         orbs: 4
       }, %{
         id: 3,
         name: "Divine Beast Vah Ruta",
         region: "lanayru",
+        trial: nil,
+        quest: nil,
         orbs: 4
       }
     ]

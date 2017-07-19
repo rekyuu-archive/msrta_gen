@@ -9,6 +9,11 @@
   font-weight: bold;
 }
 
+@font-face {
+  font-family: "Hylia Serif";
+  src: url("/fonts/HyliaSerifBeta-Regular.otf");
+}
+
 html {
   background: url("/images/background.png") top right;
   color: white;
@@ -38,12 +43,41 @@ a, a:hover {
 a { text-decoration: none; }
 a:hover { text-decoration: underline; }
 
-fieldset {
+.segment p {
+  text-align: center;
+  width: 100%;
+}
+
+p.name {
+  font-size: 3.5em;
+  font-family: "Hylia Serif";
+  margin: 0;
+  line-height: 1em;
+}
+
+p.trial, p.quest, p.region {
+  font-size: 1.25em;
+  line-height: 1em;
+  margin: .75em 0 0 0;
+}
+
+p.quest { font-weight: bold; }
+
+p.trial {
+  padding-bottom: 1em;
+  border-bottom: 1px solid rgba(255,255,255,0.33);
+}
+
+fieldset, .segment {
   background: rgba(0,0,0,0.66);
   border: none;
   border-radius: 5px;
   padding: 1em;
   margin-bottom: 1em;
+}
+
+fieldset.error {
+  background: rgba(63,0,0,0.66);
 }
 
 legend {

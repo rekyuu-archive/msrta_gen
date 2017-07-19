@@ -1,1 +1,23 @@
-<h2><%= @run.seed %></h2>
+<%= for goal <- @run.goals do %>
+  <div class="segment">
+    <p class="name">
+      <%= if goal.orbs == 1 do %>
+        <%= goal.trial %>
+      <%= end %>
+
+      <%= if goal.orbs == 4 do %>
+        <%= goal.name %>
+      <%= end %>
+    </p>
+
+    <%= if goal.trial do %>
+      <p class="trial"><%= goal.name %> Shrine</p>
+    <%= end %>
+
+    <%= if goal.quest do %>
+      <p class="quest">"<%= goal.quest.name %>" Shrine Quest</p>
+    <%= end %>
+
+    <p class="region"><%= goal.region |> String.capitalize %> Region</p>
+  </div>
+<%= end %>

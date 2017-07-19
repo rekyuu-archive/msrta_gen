@@ -5,6 +5,13 @@
 
   <h2>Run Options</h2>
 
+  <%= if get_flash(@conn, :error) do %>
+    <fieldset class="error">
+      <legend>Error</legend>
+      <p style="margin: 0"><%= get_flash(@conn, :error) %></p>
+    </fieldset>
+  <%= end %>
+
   <fieldset>
     <legend>Seed</legend>
     <input type="text" name="seed" value="<%= @seed %>" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="16"/>

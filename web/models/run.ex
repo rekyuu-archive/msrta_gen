@@ -20,6 +20,6 @@ defmodule MsrtaGen.Run do
   def changeset(struct, params \\ %{}) do
     struct
     |> cast(params, [:seed, :quest_mode, :plat_shuffle, :beasts, :regions, :tests_of_strength, :blessings, :other_opts])
-    |> validate_required([:seed, :quest_mode, :plat_shuffle, :blessings])
+    |> validate_required([:seed, :quest_mode, :plat_shuffle, :regions, :blessings])
   end
 end

@@ -192,7 +192,7 @@ defmodule MsrtaGen.Util do
     shrine_pool = gen_pool(params)
     cond do
       length(shrine_pool) < 36 ->
-        {:error, "Not enough parameters to complete a run."}
+        {:error, "Selected options is not enough to finish a run."}
       true ->
         pool = Enum.take_random(shrine_pool, 36) |> Enum.uniq
         beast_pool = Enum.filter(pool, fn(s) -> s.orbs == 4 end)
