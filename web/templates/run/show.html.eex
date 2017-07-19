@@ -23,7 +23,7 @@
         <p class="quest">"<%= goal.quest.name %>" Shrine Quest</p>
       <%= end %>
 
-      <p class="region"><%= goal.region %> Region</p>
+      <p class="region"><%= goal.region %><%= unless goal.region == "Good luck!" do %> Region<%= end %></p>
     </div>
   <%= end %>
 </div>

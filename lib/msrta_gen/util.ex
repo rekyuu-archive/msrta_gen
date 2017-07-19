@@ -287,6 +287,19 @@ defmodule MsrtaGen.Util do
           quest: nil,
           orbs: 4
         }]
+
+        pool = cond do
+          params.quest_mode ->
+            [%{
+              name: "Click to Start",
+              region: "Good luck!",
+              trial: nil,
+              quest: nil,
+              orbs: 4
+            }] ++ pool
+          true -> pool
+        end
+
         {:ok, pool}
     end
   end
