@@ -10,6 +10,7 @@ defmodule MsrtaGen.Run do
     field :tests_of_strength, {:array, :string}
     field :blessings,         :string
     field :other_opts,        {:array, :string}
+    field :run                {:array, :map}
 
     timestamps()
   end
@@ -19,7 +20,7 @@ defmodule MsrtaGen.Run do
   """
   def changeset(struct, params \\ %{}) do
     struct
-    |> cast(params, [:seed, :quest_mode, :plat_shuffle, :beasts, :regions, :tests_of_strength, :blessings, :other_opts])
+    |> cast(params, [:seed, :quest_mode, :plat_shuffle, :beasts, :regions, :tests_of_strength, :blessings, :other_opts, :run])
     |> validate_required([:seed, :quest_mode, :plat_shuffle, :blessings])
   end
 end
