@@ -138,17 +138,19 @@ defmodule MsrtaGen.Util do
     shrines = for shrine <- shrines do
       region = Enum.member?(params.regions, shrine.region)
       tos = Enum.member?(params.tests_of_strength, shrine.tos)
-      blessing = if shrine.blessing do
-        case params.blessings do
-          "quests" ->
-            cond do
-              shrine.quest == nil -> true
-              shrine.quest.forced -> true
-              true -> false
-            end
-          "all"  -> true
-          "none" -> false
-        end
+      blessing = cond do
+        shrine.blessing ->
+          case params.blessings do
+            "quests" ->
+              cond do
+                shrine.quest == nil -> true
+                shrine.quest.forced -> true
+                true -> false
+              end
+            "all"  -> true
+            "none" -> false
+          end
+        true -> true
       end
 
       cond do
