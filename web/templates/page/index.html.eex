@@ -61,7 +61,7 @@
   <fieldset>
     <legend>Regions</legend>
 
-    <p style="margin-top: 0">If a unchecked region includes a Divine Beast that is checked above, the Divine Beast will NOT be removed from the pool.</p>
+    <p style="margin-top: 0">The following will only remove shrines from unchecked regions.</p>
 
     <div>
       <input id="akkala" type="checkbox" name="regions[]" value="akkala" checked>
