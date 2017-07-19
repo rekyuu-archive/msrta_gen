@@ -1,5 +1,6 @@
 defmodule MsrtaGen.Util do
   alias MsrtaGen.Definitions
+  import Logger
 
   def gen_seed(length \\ 16) do
     characters = for _x <- 1..length do
@@ -45,6 +46,7 @@ defmodule MsrtaGen.Util do
     shrines = for opt <- opts do
       unless Enum.member?(params.other_opts, opt) do
         shrines = if opt == "camera" do
+          Logger.warn "Removing camera shrines..."
           # Stolen Heirloom
           index = Enum.find_index(shrines, fn(s) -> s.id == 17 end)
           shrines = List.delete_at(shrines, index)
@@ -56,6 +58,7 @@ defmodule MsrtaGen.Util do
           # Guardian Slideshow
           index = Enum.find_index(shrines, fn(s) -> s.id == 70 end)
           List.delete_at(shrines, index)
+          Logger.warn "Removed camera shrines."
         end
 
         shrines = if opt == "labyrinths" do
@@ -122,8 +125,10 @@ defmodule MsrtaGen.Util do
 
         shrines = if opt == "bloody_moon" do
           # Under a Red Moon
+          Logger.warn "Removing Blood Moon shrine..."
           index = Enum.find_index(shrines, fn(s) -> s.id == 83 end)
           List.delete_at(shrines, index)
+          Logger.warn "Removed Blood Moon shrine."
         end
 
         shrines
