@@ -207,6 +207,11 @@
     </div>
 
     <div>
+      <input id="teaching" type="checkbox" name="other_opts[]" value="teaching">
+      <label for="teaching">Ta'loh Naeg's Teaching</label>
+    </div>
+
+    <div>
       <input id="thunder" type="checkbox" name="other_opts[]" value="thunder" checked>
       <label for="thunder">Toh Yahsa (Trial of Thunder)</label>
     </div>

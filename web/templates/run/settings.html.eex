@@ -70,6 +70,7 @@
             "eventide" -> "Include \"Stranded on Eventide\""
             "thunder" -> "Include \"Trial of Thunder\""
             "bloody_moon" -> "Include \"Under a Red Moon\""
+            "teaching" -> "Include \"Ta'loh Naeg's Teaching\""
           end
         end
 

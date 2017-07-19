@@ -163,6 +163,14 @@ defmodule MsrtaGen.Util do
         List.delete_at(shrines, index)
     end
 
+    shrines = cond do
+      Enum.member?(params.other_opts, "teaching") -> shrines
+      true ->
+        # Ta'loh Naeg's Teaching
+        index = Enum.find_index(shrines, fn(s) -> s.id == 18 end)
+        List.delete_at(shrines, index)
+    end
+
     # Clears shrines from regions, tests of strength, and blessings
     shrines = for shrine <- shrines do
       region = Enum.member?(params.regions, shrine.region)
@@ -272,7 +280,13 @@ defmodule MsrtaGen.Util do
           true -> pool
         end
 
-        pool = plateau ++ pool
+        pool = plateau ++ pool ++ [%{
+          name: "The Hero's Sword",
+          region: "Woodland",
+          trial: nil,
+          quest: nil,
+          orbs: 4
+        }]
         {:ok, pool}
     end
   end
