@@ -10,7 +10,6 @@ defmodule MsrtaGen.Run do
     field :tests_of_strength, {:array, :string}
     field :blessings,         :string
     field :other_opts,        {:array, :string}
-    field :run,               {:array, :map}
 
     timestamps()
   end

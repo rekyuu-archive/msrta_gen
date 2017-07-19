@@ -253,7 +253,7 @@ defmodule MsrtaGen.Util do
           true -> pool
         end
 
-        pool
+        {:ok, pool}
     end
   end
 end

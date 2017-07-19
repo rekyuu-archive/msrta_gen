@@ -4,9 +4,7 @@ defmodule MsrtaGen.RunController do
   use MsrtaGen.Web, :controller
 
   def create(conn, run_params) do
-    run = Util.gen_run(Run.changeset(%Run{}, run_params).changes)
-    params = Map.merge(run_params, %{run: run})
-    changeset = Run.changeset(%Run{}, params)
+    changeset = Run.changeset(%Run{}, run_params)
 
     case Repo.insert(changeset) do
       {:ok, run} ->
@@ -19,6 +17,6 @@ defmodule MsrtaGen.RunController do
 
   def show(conn, %{"id" => id}) do
     run = Repo.get!(Run, id)
-    render conn, "show.html", run: run
+    render conn, "show.html", run: Map.merge(run, %{run: Util.gen_run(run)})
   end
 end
