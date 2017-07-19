@@ -106,12 +106,6 @@ defmodule MsrtaGen.Util do
       List.delete_at(shrines, index)
     end
 
-    shrines = unless Enum.member?(params.other_opts, "eventide") do
-      # Stranded on Eventide
-      index = Enum.find_index(shrines, fn(s) -> s.id == 36 end)
-      List.delete_at(shrines, index)
-    end
-
     shrines = unless Enum.member?(params.other_opts, "thunder") do
       # Trial of Thunder
       index = Enum.find_index(shrines, fn(s) -> s.id == 85 end)
