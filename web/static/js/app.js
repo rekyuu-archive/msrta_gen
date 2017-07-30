@@ -29,3 +29,14 @@ $(".quest .goal").click(function() {
     $(`.quest .goal_${count}`).fadeToggle(500);
   },500)
 });
+$("a.shrinelink").click(function(e) {
+  e = e || window.event
+  //IE9 & Other Browsers
+  if (e.stopPropagation) {
+    e.stopPropagation();
+  }
+  //IE8 and Lower
+  else {
+    e.cancelBubble = true;
+  }
+})
