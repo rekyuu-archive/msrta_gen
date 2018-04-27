@@ -254,11 +254,8 @@ defmodule MsrtaGen.Util do
         pool = Enum.take_random(shrine_pool, 36 - length(beast_pool) * 4) ++ beast_pool |> Enum.shuffle
 
         # Verify that a beast required quest does not come before the beast
-        medoh_index = Enum.find_index(pool, fn(b) -> b.id == 0 end)
+        medoh_index = Enum.find_index(pool, fn(b) -> b.id == 0 && b.orbs == 4 end)
         nest_index = Enum.find_index(pool, fn(s) -> s.id == 93 end)
-
-        naboris_index = Enum.find_index(pool, fn(b) -> b.id == 1 end)
-        champ_index = Enum.find_index(pool, fn(s) -> s.id == 103 end)
 
         pool = cond do
           nest_index == nil -> pool
@@ -269,6 +266,10 @@ defmodule MsrtaGen.Util do
             List.insert_at(pool, Enum.random(medoh_index..length(pool)), nest)
           true -> pool
         end
+
+        # Verify for Naboris here cause the position could be changed after the operation above
+        naboris_index = Enum.find_index(pool, fn(b) -> b.id == 1 && b.orbs == 4 end)
+        champ_index = Enum.find_index(pool, fn(s) -> s.id == 103 end)
 
         pool = cond do
           champ_index == nil -> pool
