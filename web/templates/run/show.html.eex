@@ -6,6 +6,9 @@
   <%= for goal <- @run.goals do %>
     <div class="goal goal_<%= Enum.find_index @run.goals, fn(g) -> g == goal end %>">
       <p class="name">
+      <%= if goal.orbs==1 do %>
+        <a class="shrinelink" target="_blank" style="font-weight: inherit;" href="https://www.zeldadungeon.net/breath-of-the-wild-interactive-map/?id=<%=goal.name%> Shrine">
+      <%= end %>
         <%= if goal.orbs == 1 do %>
           <%= goal.trial %>
         <%= end %>
@@ -13,6 +16,9 @@
         <%= if goal.orbs == 4 do %>
           <%= goal.name %>
         <%= end %>
+      <%= if goal.orbs==1 do %>
+        </a>
+      <%= end %>
       </p>
 
       <%= if goal.trial do %>
